@@ -55,7 +55,6 @@ public class aboutappActivity extends AppCompatActivity {
                 }
             }
         });
-        return false;
     }
     private void addDataToList() {
         ArrayList<ChildItem> childItems1 = new ArrayList<>();

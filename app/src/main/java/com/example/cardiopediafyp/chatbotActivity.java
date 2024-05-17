@@ -41,7 +41,6 @@ public class chatbotActivity extends AppCompatActivity {
                 }
             }
         });
-        return false;
     }
 
     private String getBotResponse(String userMessage) {
