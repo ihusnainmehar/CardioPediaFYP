@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960942868798",
+    "project_id": "cardiopediafyp",
+    "storage_bucket": "cardiopediafyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960942868798:android:cab215f062acc100b9446f",
+        "android_client_info": {
+          "package_name": "com.example.cardiopediafyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDputu_uzXPIs6GRNLFrXrbZnNHSzTWve0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
