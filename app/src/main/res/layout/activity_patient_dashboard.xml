@@ -255,7 +255,7 @@
             app:itemIconSize="30dp"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/navigation_menu"
+            app:menu="@menu/bottom_menu"
             tools:ignore="MissingConstraints">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>

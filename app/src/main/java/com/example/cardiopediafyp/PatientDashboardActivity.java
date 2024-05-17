@@ -64,7 +64,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        bottomNavigationView.setSelectedItemId(R.id.menuHome);
+        //bottomNavigationView.setSelectedItemId(R.id.menuHome);
 
 //        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 //            @Override

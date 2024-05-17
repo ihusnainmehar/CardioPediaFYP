@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/bottom_services"
+        android:icon="@drawable/ic_baseline_widgets_24"
+        android:title="All Services"/>
+    <item
+        android:id="@+id/bottom_about"
+        android:icon="@drawable/ic_appicon"
+        android:title="About Us"/>
+    <item
+        android:id="@+id/bottom_chatbot"
+        android:icon="@drawable/r2"
+        android:title="CardioPedia"/>
+</menu>
