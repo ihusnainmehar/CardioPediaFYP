@@ -1,5 +1,7 @@
 package com.example.cardiopediafyp;
 
+import static com.example.cardiopediafyp.R.id.bottom_home;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,7 +23,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class PatientDashboardActivity extends AppCompatActivity {
-
     TextView tvFirstName;
     EditText editText;
     ImageView searchButton;
@@ -64,8 +65,55 @@ public class PatientDashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //bottomNavigationView.setSelectedItemId(R.id.menuHome);
+        bottomNavigationView.setSelectedItemId(bottom_home);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.bottom_home) {
+                return true;
+            } else if (item.getItemId() == R.id.bottom_services) {
+                startActivity(new Intent(PatientDashboardActivity.this, sercvicesActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                finish();
+                return true;
+            } else if (item.getItemId() == R.id.bottom_about) {
+                startActivity(new Intent(PatientDashboardActivity.this, aboutappActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                finish();
+                return true;
+            } else if (item.getItemId() == R.id.bottom_chatbot) {
+                startActivity(new Intent(PatientDashboardActivity.this, chatbotActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                finish();
+                return true;
+            }
+            return false;
+        });
 
+
+//        bottomNavigationView.setOnItemSelectedListener(item ->{
+//            switch (item.getItemId()) {
+//                case R.id.bottom_home:
+//                    startActivity(new Intent(PatientDashboardActivity.this, PatientDashboardActivity.class));
+//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                    finish();
+//                    return true;
+//                case R.id.bottom_services:
+//                    startActivity(new Intent(PatientDashboardActivity.this, sercvicesActivity.class));
+//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                    finish();
+//                    return true;
+//                case R.id.bottom_about:
+//                    startActivity(new Intent(PatientDashboardActivity.this, aboutappActivity.class));
+//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                    finish();
+//                    return true;
+//                case R.id.bottom_chatbot:
+//                    startActivity(new Intent(PatientDashboardActivity.this, chatbotActivity.class));
+//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                    finish();
+//                    return true;
+//            }
+//            return false;
+//        });
 //        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 //            @Override
 //            public boolean onNavigationItemSelected(@NonNull MenuItem item) {

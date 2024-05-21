@@ -26,13 +26,13 @@
             android:exported="false" />
         <activity
             android:name=".chatbotActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".aboutappActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".sercvicesActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MedTrackActivity"
             android:exported="false" />
